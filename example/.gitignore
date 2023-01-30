@@ -1,0 +1,9 @@
+/.gradle
+/.idea
+/build
+/deps
+/modules
+/src/main
+/korge.keystore
+/local.properties
+/yarn.lock

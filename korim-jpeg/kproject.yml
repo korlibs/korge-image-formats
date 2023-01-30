@@ -1,0 +1,4 @@
+name: korge-jpeg
+dependencies:
+    - "maven::common::com.soywiz.korlibs.korge2:korge"
+
