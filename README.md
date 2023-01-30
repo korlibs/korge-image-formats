@@ -1,0 +1,3 @@
+# korge-formats
+
+* JPEG
