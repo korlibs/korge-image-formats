@@ -1,3 +1,3 @@
-# korge-formats
+# korge-image-formats
 
 * JPEG
