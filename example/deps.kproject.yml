@@ -1,4 +1,4 @@
 #name: deps
 dependencies:
     - ../korim-jpeg
-
+    - ../korim-qr
