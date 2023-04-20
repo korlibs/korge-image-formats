@@ -14,7 +14,7 @@
 //
 //---------------------------------------------------------------------
 
-package com.soywiz.korim.qr
+package korlibs.image.qr
 
 /**
  * https://github.com/davidshimjs/qrcodejs
@@ -29,16 +29,16 @@ package com.soywiz.korim.qr
  * @see <a href="http://jeromeetienne.github.com/jquery-qrcode/" target="_blank">http://jeromeetienne.github.com/jquery-qrcode/</a>
  */
 
-import com.soywiz.kds.IntArrayList
-import com.soywiz.klock.DateFormat
-import com.soywiz.klock.DateTime
-import com.soywiz.klock.format
-import com.soywiz.kmem.UByteArrayInt
-import com.soywiz.korim.bitmap.Bitmap32
-import com.soywiz.korim.color.Colors
-import com.soywiz.korim.color.RGBA
-import com.soywiz.korio.lang.UTF8
-import com.soywiz.korio.lang.toByteArray
+import korlibs.datastructure.IntArrayList
+import korlibs.time.DateFormat
+import korlibs.time.DateTime
+import korlibs.time.format
+import korlibs.memory.UByteArrayInt
+import korlibs.image.bitmap.Bitmap32
+import korlibs.image.color.Colors
+import korlibs.image.color.RGBA
+import korlibs.io.lang.UTF8
+import korlibs.io.lang.toByteArray
 import kotlin.math.abs
 import kotlin.math.max
 

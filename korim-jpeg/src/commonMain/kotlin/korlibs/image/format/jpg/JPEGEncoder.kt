@@ -1,8 +1,8 @@
-package com.soywiz.korim.format.jpg
+package korlibs.image.format.jpg
 
-import com.soywiz.kmem.*
-import com.soywiz.korim.bitmap.*
-import com.soywiz.korio.stream.*
+import korlibs.memory.*
+import korlibs.image.bitmap.*
+import korlibs.io.stream.*
 import kotlin.math.*
 
 /*

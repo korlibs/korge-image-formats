@@ -1,4 +1,4 @@
-package com.soywiz.korim.qr
+package korlibs.image.qr
 
 import kotlin.test.*
 

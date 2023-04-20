@@ -1,9 +1,9 @@
-package com.soywiz.korim.format.jpg
+package korlibs.image.format.jpg
 
-import com.soywiz.kmem.*
-import com.soywiz.korim.bitmap.*
-import com.soywiz.korim.color.*
-import com.soywiz.korio.lang.*
+import korlibs.memory.*
+import korlibs.image.bitmap.*
+import korlibs.image.color.*
+import korlibs.io.lang.*
 import kotlin.math.*
 
 // https://github.com/eugeneware/jpeg-js/blob/652bfced3ead53808285b1b5fa9c0b589d00bbf0/lib/decoder.js
