@@ -1,14 +1,13 @@
-import korlibs.time.*
-import korlibs.korge.*
-import korlibs.korge.scene.*
-import korlibs.korge.view.*
-import korlibs.korge.view.filter.*
 import korlibs.image.color.*
 import korlibs.image.format.*
 import korlibs.image.format.jpg.*
 import korlibs.image.qr.*
 import korlibs.io.file.std.*
+import korlibs.korge.*
+import korlibs.korge.scene.*
+import korlibs.korge.view.*
 import korlibs.math.geom.*
+import korlibs.time.*
 
 suspend fun main() = Korge(windowSize = Size(512, 512), backgroundColor = Colors["#2b2b2b"]).start {
     val sceneContainer = sceneContainer()
