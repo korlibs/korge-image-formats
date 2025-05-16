@@ -19,12 +19,12 @@ class MyScene : Scene() {
     override suspend fun SContainer.sceneMain() {
         val pngBytes = resourcesVfs["korge.png"].readBytes()
         val bitmap = resourcesVfs["korge.png"].readBitmap()
-        JPEG.encode(bitmap, ImageEncodingProps(quality = 0.1))
-        val jpegBytes = measureTime({ JPEG.encode(bitmap, ImageEncodingProps(quality = 0.1)) }) {
+        ExtJPEG.encode(bitmap, ImageEncodingProps(quality = 0.1))
+        val jpegBytes = measureTime({ ExtJPEG.encode(bitmap, ImageEncodingProps(quality = 0.1)) }) {
             println("ENCODED in $it")
         }
-        JPEG.decode(jpegBytes)
-        val image = measureTime({ JPEG.decode(jpegBytes) }) {
+        ExtJPEG.decode(jpegBytes)
+        val image = measureTime({ ExtJPEG.decode(jpegBytes) }) {
             println("DECODED in $it")
         }
         image(image).alpha(0.25)

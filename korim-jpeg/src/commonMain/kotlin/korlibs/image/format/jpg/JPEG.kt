@@ -3,7 +3,7 @@ package korlibs.image.format.jpg
 import korlibs.image.format.*
 import korlibs.io.stream.*
 
-object JPEG : ImageFormat("jpg", "jpeg") {
+object ExtJPEG : ImageFormat("jpg", "jpeg") {
     override fun decodeHeader(s: SyncStream, props: ImageDecodingProps): ImageInfo? = try {
         val info = JPEGDecoder.decodeInfo(s.readAll())
         ImageInfo().apply {
@@ -15,11 +15,11 @@ object JPEG : ImageFormat("jpg", "jpeg") {
         null
     }
 
-    override fun readImage(s: SyncStream, props: ImageDecodingProps): ImageData {
-        return ImageData(listOf(ImageFrame(JPEGDecoder.decode(s.readAll()))))
+    override fun readImageContainer(s: SyncStream, props: ImageDecodingProps): ImageDataContainer {
+        return ImageDataContainer(ImageData(listOf(ImageFrame(JPEGDecoder.decode(s.readAll())))))
     }
 
-    override fun writeImage(image: ImageData, s: SyncStream, props: ImageEncodingProps) {
+    override fun writeImageContainer(image: ImageDataContainer, s: SyncStream, props: ImageEncodingProps) {
         s.writeBytes(JPEGEncoder.encode(image.mainBitmap.toBMP32(), quality = (props.quality * 100).toInt()))
     }
 }
